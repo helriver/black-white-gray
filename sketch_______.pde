@@ -65,12 +65,14 @@ void setup(){
     }
     
 //    if(t[n1*10+m1]==true & t[n2*10+m2]==true){
-//      col = random(3); 
-//      if( 0<=col & col<1 ){fill(63);}
-//      else if( 1<=col & col<2 ){fill(127);}
-//      else{fill(255);}
+      
     if(bool==true && x[m2]-x[m1]<=618 && y[n2]-y[n1]<=618){
-      fill(random(100)+25);
+//      fill(random(100)+25);
+      col = random(5); 
+      if( 0<=col & col<1 ){fill(69,59,57);}
+      else if( 1<=col & col<2 ){fill(46,97,124);}
+      else if( 2<=col & col<3.5){fill(168,75,30);}
+      else{fill(179,165,154);}
       stroke(0);
       strokeWeight(random(5)+3);
       rect(x[m1], y[n1], x[m2]-x[m1], y[n2]-y[n1]);
